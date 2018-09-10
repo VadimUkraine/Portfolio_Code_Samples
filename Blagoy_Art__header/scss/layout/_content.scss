@@ -1,0 +1,210 @@
+
+//main styles
+
+.main-wrapper{
+	padding: 0 0 0 0;
+	min-width: $min-width;
+    width: 100%;
+	position: relative;
+	overflow: hidden;
+	min-height:100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction:column;
+    -webkit-flex-direction:column;
+    -ms-flex-direction: column;
+	justify-content:flex-start;	
+    -webkit-justify-content:flex-start;	
+    -ms-flex-pack: start;
+}
+.wrapper{
+	min-width: $min-width;
+	max-width: $max-width;
+	padding: 0 0 0 0;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper__header-style{
+	padding: 0 60px 0 60px;
+}
+
+/* titles */
+p{	
+	@include font($base-font-size,$base-line-height,$text-color);
+	padding: 15px 0 15px 0;
+	font-weight: 400;	
+}
+h1{	
+	@include font($font-size-h1,$line-height-h1,$title-color);
+	font-family: $title-font-family;
+	padding: 15px 0 15px 0;
+	font-weight: 400;	
+}
+h2{
+	@include font($font-size-h2,$line-height-h2,$title-color);
+	font-family: $title-font-family;
+	padding: 15px 0 15px 0;
+	font-weight: 400;	
+}
+h3{
+	@include font($font-size-h3,$line-height-h3,$title-color);
+	font-family: $title-font-family;
+	padding: 15px 0 15px 0;
+	font-weight: 400;
+}
+
+/* text position */
+.text-left{text-align: left!important}
+.text-center{text-align: center!important}
+.text-right{text-align: right!important}
+.nowrap{white-space: nowrap!important;}
+
+
+/* loader */
+.loaded .main-wrapper{visibility:hidden;}
+.icon-load{background:url(../img/loader.gif) no-repeat left top;width:40px;height:40px;position:fixed;left:50%;top:50%;margin-left:-20px;margin-left:-20px;display:none;}
+.loaded .icon-load{display:block;}
+
+
+/*
+================================================================================
+|                                     CONTENT                                 |
+================================================================================
+*/
+.content{	
+	min-width: $min-width;
+	text-align:left;
+    width: 100%;
+	order: 2;
+    -webkit-order: 2;
+	flex-grow: 1;
+    -webkit-flex-grow: 1;
+	background: $base-bg; 
+}
+.wrapper__content_style{
+
+}
+.slider{
+	width: 1354px;
+	margin: 0 auto;
+	
+	&__item{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		height: 326px;
+		background-image: url(../img/bg_image.png);
+		background-size: 100% 100%;		
+	}
+	&__block{
+		width: 500px;
+		height: 128px;
+		background-color: #d2a66b;
+		opacity: 0.88;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 0 10px 29px;
+		margin-left: 70px;		
+		p{
+			color: #ffffff;
+			font-family: 'PT Sans';
+			font-size: 2.6875rem;
+			font-weight: 400;
+			line-height: 47.66px;
+			padding: 0;
+		}
+	}
+}
+.owl-nav{
+	display: flex;
+	flex-direction: row;
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0%;
+	width: 100%;
+	justify-content: space-between;
+}
+.owl-prev, 
+.owl-next{
+	width: 37px;
+	height: 128px;
+	background-color: #d2a66b;
+	opacity: 0.88;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&:hover{
+		background-color: #ffffff;
+	}
+	&:hover .fa-chevron-left, .fa-chevron-right{
+		color: #d2a66b;
+	}
+	&:hover .fa-chevron-right{
+		color: #d2a66b;
+	}
+	.fa-chevron-right{
+		color: #ffffff;
+		margin: 0 0 0 7px;
+	}
+	.fa-chevron-left{
+		color: #ffffff;
+		margin: 0 7px 0 0;
+	}	
+}
+.owl-dots{
+	width: 100%;
+	position: absolute;
+	bottom: -65px;
+	display: flex;
+	justify-content: center;
+	
+}
+.owl-dot{	
+	display: inline-block;
+	border-radius: 50%;
+	width: 18px;
+	height: 18px;
+	background-color: #cb944c;
+	opacity: 0.33;
+	margin: 0 12px;
+}
+.owl-dot.active{
+	opacity: 1;
+}
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    body{min-height: 100hv; width: 100%; display: flex; flex-direction: column;}
+}
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 992px){
+	
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+}
+
+
+

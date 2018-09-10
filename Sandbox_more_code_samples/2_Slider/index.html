@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HomeTask_3_slider</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+    	<div class="slider">
+	   		<img src="images/1.png" alt=""><img src="images/2.png" alt=""><img src="images/3.png" alt="">	
+	   	</div>
+    	<div class="arr">
+    		<button class="arrow left">&lt;</button>
+    		<button class="arrow right">&gt;</button>
+    	</div>
+ 	<script type="text/javascript" src="js/jquery-3.2.0.slim.min.js"></script>
+ 	<script>
+
+ 		var counter = 0;
+        $('.left').click(function(){
+            $('img')[counter].className = '';
+            counter--;
+            if(counter < 0){
+                counter = $('img').length - 1;
+            }
+            $('img')[counter].classList.add('active');
+        });
+        $('.right').click(function(){
+            $('img')[counter].className = '';
+            counter++;
+            if(counter >= $('img').length){
+                counter = 0;
+            }
+            $('img')[counter].classList.add('active');
+        });
+
+	</script>
+	</body>
+</html>

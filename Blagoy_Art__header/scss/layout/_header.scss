@@ -1,0 +1,352 @@
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+header{
+	background: $base-bg;
+	width:100%;
+	height: 186px;
+	min-width: $min-width;
+	text-align:left;	
+	order: 1;	
+    -webkit-order: 1;	
+}
+.first-line{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 24px 0 0 0;
+	margin: 0 auto;
+}
+.second-line{
+	@extend .first-line;
+	width: 100%;
+	padding: 0 0 0 0;
+	align-items: center;
+	border-top: 1px solid #dddfdf;
+	border-bottom: 1px solid #dddfdf;
+	margin-top: 10px;
+	position: relative;
+}
+.logo{
+	margin: 11px 0 0 10px;
+	&__text{
+		color: #747688;
+		font-family: 'PT Sans';
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 1.25rem;
+		padding: 2px 0 0 0;
+	}
+}
+.form-search{
+	display: flex;
+	justify-content: space-between;
+	width: 40.3%;
+	height: 40px;
+	border-radius: 4px;
+	border: 1px solid #b9b8bd;
+	margin: 5px 3.7% 0 0;
+	padding: 0 7px 0 0;
+}
+.form-search__input{
+	border: 0;
+	height: 100%;
+	width: 100%;
+	padding: 1px 5px 0 8px;
+	color: #b9b8bd;
+	font-family: 'PT Sans';
+	font-size: 14px;
+	font-weight: 400;
+}
+.form-search__button{
+	background: $base-bg;
+	border: 0;
+	padding: 7px 3px 4px 0;
+}
+.contacts{
+	display: flex;
+	width: 338px;
+	justify-content: space-between;
+	margin: 0 10px 0 0;
+}
+.phone{
+	color: #181616;
+	font-family: 'PT Sans';
+	font-size: 1.4375rem;
+	font-weight: 400;
+	padding: 17px 5px 0 0;
+}
+.time-delivery{
+	color: #2b3056;	
+	padding: 9px 0 0 0;
+}
+.time-delivery__time,
+.time-delivery__delivery{
+	padding: 0;
+	font-family: 'PT Sans';
+	font-size: 0.875rem;
+	font-weight: 400;
+}
+.time-delivery__time{
+	padding: 0 0 0 6px;
+}
+.time-delivery__delivery{
+	padding: 0 0 0 7px;
+}
+
+.time-delivery_color_brown{
+	color: #cb944c;
+}
+.hamburger-menu{
+	width: 15px;
+	height: 12px;
+	margin: 0 9px 0 10px;
+}
+.nav{
+	width: 70%;
+}
+.main-menu{
+	display: flex;
+	height: 53px;
+	width: 100%;
+	padding: 0 0 0 0;
+	&__item{
+		list-style-type: none;
+		height: 100%;
+		color: #181818;
+		font-family: 'PT Sans';
+		font-size: 1rem;
+		font-weight: 700;
+		padding: 0 0 0 0 ;
+		margin: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		cursor: pointer;
+		&:hover .drop-menu__wrap{
+			visibility: visible;
+			z-index: 10;
+		}		
+	}
+	&__tit{
+		color: #181818;
+		font-family: 'PT Sans';
+		font-size: 1rem;
+		font-weight: 700;	
+		padding: 0 6px 0 0;	
+	}
+	.fa-chevron-down{
+		color: #cb944c;
+		transform: scale(0.8);
+		margin: 0 0 0 -1px;				
+	}
+	&__style-item2{
+		margin: 0 0 0 1.8%;
+	}
+	&__style-item3{
+		margin: 0 0 0 2.8%;
+	}
+	&__style-item4{
+		margin: 0 0 0 2.1%;
+	}
+	&__style-item5{
+		margin: 0 0 0 2.1%;
+	}
+	&__style-item6{
+		margin: 0 0 0 2.2%;
+	}
+}
+.drop-menu{
+	position: relative;
+	&__wrap{
+		padding: 9px 0 0 0;
+		position: absolute;
+		visibility: hidden;
+		z-index: 10;
+		top: 53px;
+		left: -4px;		
+	}
+	&__list{
+		width: 244px;
+		height: 266px;
+		box-shadow: 2px 3px 1px rgba(108, 104, 104, 0.33);
+		border-radius: 3px;
+		border: 1px solid #dddfdf;
+		background-color: #ffffff;	
+		padding: 15px 0 30px 0;
+	}
+	&__item{
+		padding: 0 16px;
+		list-style-type: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&:hover{
+			background-color: rgba(227,227,228,0.77); 
+		}	
+		&:hover .sub-menu__wrap{
+			visibility: visible;
+		}
+		.fa-chevron-right{
+			transform: scale(0.8);
+			color: #cb944c;
+			margin: 0 -3px 0 0;
+		}
+	}	
+}
+.menu-block{
+	display:flex;
+	align-items: center;
+	width: 200px;
+	&__circle{
+		width: 6px;
+		height: 6px;
+		border: 1px solid #cb944c;
+		border-radius: 50%;
+		margin-right: 8px;		
+	}
+	&__tit{
+		color: #666666;
+		font-family: 'PT Sans';
+		font-size: 0.9375rem;
+		font-weight: 400;
+		line-height: 1.875rem;
+		padding: 0;
+	}	
+	&__style-tit{
+		line-height: 1.1875rem;
+		margin-top: 5px;
+	}
+	&__style-block{
+		padding: 0 0 0 18px;
+	}
+	&__style-circle{
+		margin-bottom: 13px;
+	}
+}
+.sub-menu{
+	position: relative;
+	&__wrap{
+		visibility: hidden;
+		position: absolute;
+		top: 104px;
+		right: -246px;
+		padding: 0 0 0 7px;		
+	}
+	&__block{		
+		width: 244px;
+		height: 156px;
+		box-shadow: 2px 3px 1px rgba(108, 104, 104, 0.33);
+		border-radius: 3px;
+		border: 1px solid #dddfdf;		
+		background-color: #ffffff;
+		padding: 18px 0 30px 0;
+	}
+	&__title{
+		font-family: 'PT Sans';
+		font-size: 1rem;
+		font-weight: 700;
+		color: #cb944c;
+		margin-left: 14px;
+	}
+	&__list{
+		margin-top: 9px;
+		list-style-type: none;
+
+	}
+	&__item{
+		&:hover{
+			background-color: rgba(227,227,228,0.77); 
+		}
+	}
+}
+.order-log{
+	display: flex;
+	width: 328px;
+	justify-content: space-around;
+}
+.order{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 208px;
+	&__cart-img{
+		width: 23px;
+		height: 23px;
+	}
+}
+
+.quantity{
+	background: #cb944c;
+	width: 23px;
+	height: 21px;
+	border-radius: 50%;
+	margin: 0 0 0 1px;
+	&__text{
+		color: #ffffff;
+		font-family: 'PT Sans';
+		font-size: 0.875rem;
+		font-weight: 700;
+		padding: 1px 0 0 3px;
+	}
+}
+.shop-data{
+	display: flex;
+	line-height: 1.25rem;
+	padding: 1px 0 0 0;
+	&__item{
+		font-family: 'PT Sans';
+		font-size: 0.875rem;
+		font-weight: 700;
+		color: #252a54;
+	}
+	&__size{
+		font-size: 1rem;
+		margin: -1px 0 0 0;
+	}
+	&__dist{
+		margin: 0 6px 0 6px;
+	}
+}
+.log{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	width: 79px;
+	&__user{
+		width: 19px;
+		height: 17px;
+	}
+	&__text{
+		font-family: 'PT Sans';
+		font-size: 1rem;
+		font-weight: 700;
+		color: #252a54;
+		padding: 1px 1px 0 0;
+	}
+}
+
+
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 992px){
+	
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+}

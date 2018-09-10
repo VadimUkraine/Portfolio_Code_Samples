@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url('../fonts/FuturaBT-Bold.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url('../fonts/FuturaBT-Medium.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Lt BT';
+    src: url('../fonts/FuturaBT-Light.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lucida Grande';
+    src: url('../fonts/LucidaGrande.woff2') format('woff2'),
+        url('../fonts/LucidaGrande.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lucida Grande';
+    src: url('../fonts/LucidaGrande-Bold.woff2') format('woff2'),
+        url('../fonts/LucidaGrande-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Edwardian Script ITC';
+    src: url('../fonts/EdwardianScriptITC.woff2') format('woff2'),
+        url('../fonts/EdwardianScriptITC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('../fonts/MinionPro-Medium.woff2') format('woff2'),
+        url('../fonts/MinionPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}

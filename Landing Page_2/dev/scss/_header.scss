@@ -1,0 +1,112 @@
+/*style for Header*/
+
+.ellipse{
+	width: 18rem;
+	height: 23rem;
+	position: absolute;
+	top: 0;
+	z-index: -10;
+	right: 0;
+	background-image: url(images/ellipse-3.png);
+	background-repeat: no-repeat;
+	transition: all 0.3s linear;
+}
+
+#header{
+	visibility: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 2.1875rem 10px 0 10px;
+	transition: all 0.3s linear;
+	width: 1551px;
+	margin: 0 auto;
+
+}
+
+.logo{
+	display: flex;
+	flex-direction: row;
+	img{
+		width: 56px;
+		height: 40px;
+		transition: all 0.3s linear;
+	}
+	p{
+		color: #000000;
+		font-family: 'Proxima Nova Th';
+		font-size: 1.25rem;
+		font-weight: 400;
+		line-height: 1.2rem;
+		margin-left: 12px;
+		padding-top: 1px;
+		height: 2.25rem;
+		transition: all 0.3s linear;
+		span{
+			font-size: 1.875rem;
+		}
+	}
+}
+nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 47.25rem;
+	padding-top: 2px;
+	li{
+		display: inline;
+		position: relative;	
+		padding-top: 8px;
+		height: 0.875rem;
+	&:hover a{
+		color: #20aa97;
+		}
+	&:hover .line{
+		visibility: visible;
+		}
+	}
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #000000;
+	font-family: 'Proxima Nova Th';
+	font-size: 1rem;
+	font-weight: 400;
+	span{
+		font-size: 1.5rem;
+	}	
+}
+.line{
+	width: 15px;
+	border: 1px solid #000000;
+	background-color: #000000;
+	position: absolute;
+	top: 1px;
+	visibility: hidden;
+}
+.line_ham{
+	width: 17px;
+	height: 1px;
+	border-radius: 2px;
+	margin: 4px;
+	background-color: #20aa97;
+}
+#hamburger{
+	display: none;
+	cursor: pointer;
+}
+
+.clicked .line_ham:first-child{
+	width: 2rem;
+}
+.clicked .line_ham:nth-child(2){
+	width: 1.5rem;
+}
+.clicked .line_ham:last-child{
+	width: 1.125rem;
+}
+.nav_show{
+	display: block;
+	right: 0%;
+}

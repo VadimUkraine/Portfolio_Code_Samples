@@ -1,0 +1,57 @@
+.stripped-down-menu{
+	display: none;
+}
+.wrapper__stripped-down-menu-style{
+	background-color: #f0f1f6;
+	height: 40px;	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.upper-hamburger{
+	width: 54px;
+	height: 40px;
+	background-color: #3eade2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	&__line{
+		width: 16px;
+		height: 2px;
+		background-color: #ffffff;
+		margin: 2px;
+	}
+	&:hover{
+		background-color: #f0f1f6;
+	}
+	&:hover &__line{
+		background-color: #3eade2;
+	}
+}
+.home-img{
+	width: 20px;
+	height: 16px;
+	cursor: pointer;
+}
+.search-lupa-img{
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+.cart-img{
+	width: 17px;
+	height: 17px;
+	cursor: pointer;
+}
+.user2-img{
+	width: 19px;
+	height: 16px;
+	cursor: pointer;
+}
+.call-img{
+	width: 16px;
+	height: 17px;
+	cursor: pointer;
+}

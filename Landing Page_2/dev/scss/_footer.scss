@@ -1,0 +1,33 @@
+
+/*style for Footer*/
+
+footer{
+	background-color: #000000;
+	height: 7.625rem; 
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 36px;
+
+	p{
+		color: #ffffff;
+		font-family: 'Proxima Nova Lt';
+		font-size: 0.875rem;
+		font-weight: 400;
+		text-align: center;
+		line-height: 1.375rem;
+		transition: all 0.3s linear;
+	}
+	span:nth-child(1){
+		font-weight: 600;
+
+	}
+	span:nth-child(2){
+		font-family: 'Proxima Nova Th';	
+	}
+	span:nth-child(3){
+		color: #20aa97;
+		font-family: 'Proxima Nova Th';	
+	}
+}

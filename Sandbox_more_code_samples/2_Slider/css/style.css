@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider{
+	width: 600px;
+	height: 400px;
+	position: relative;
+}
+img{
+	opacity: 0;
+    transition: 1s;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+img:first-child{
+    opacity: 1;
+}
+.active{
+    opacity: 1;
+}
+.arrow{
+	width: 30px;
+	height: 30px;
+	background: yellow;
+	border-radius: 50%;
+	border: 1px solid black;
+	cursor: pointer;
+}
+.arrow:hover{
+	background-color: orange;
+}
+.arr{
+	display: flex;
+	flex-direction: row;
+	width: 600px;
+	margin: 0 auto;
+	justify-content: space-between;
+	padding-top: 20px;
+}

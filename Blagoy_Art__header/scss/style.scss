@@ -1,0 +1,386 @@
+@import "base/_reset";
+@import "base/_fonts";
+//@import "components/_jquery.formstyler";
+//@import "components/_fancybox";
+//@import "components/_slick";
+//@import "components/_mCustomScrollbar";
+@import "layout/_header";
+@import "layout/_footer";
+@import "layout/_content";
+@import "layout/_media";
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import "layout/stripped_down_menu";
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTSans-Regular.woff2') format('woff2'),
+        url('../fonts/PTSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+	font-size: 16px;	
+}
+
+@media screen and (max-width: 1380px) {
+	.slider{
+		padding: 0 13px;
+		transition: all 0.3s linear;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1354px) {
+	.wrapper__content_style{
+		width: 100%;
+	}
+	.wrapper__header-style{
+		padding: 0 13px;
+		transition: all 0.3s linear;
+	}
+	.first-line{
+		padding: 24px 17px 0 17px;
+		transition: all 0.3s linear;
+	}	
+	.second-line{
+		padding: 0 17px 0 17px;
+		transition: all 0.3s linear;
+	}
+}
+
+@media screen and (max-width: 1288px) {
+	.order-log{
+		position: absolute;
+		right: 18px;
+		top: -31px;
+		transition: all 0.3s linear;
+	}
+	.first-line{
+		padding: 6px 17px 0 17px;
+	}
+	.second-line{
+		margin-top: 30px;
+		padding: 0 17px 0 17px;
+	}	
+	.form-search{
+		margin-top: 15px;
+		transition: all 0.3s linear;
+	}
+	.logo{
+		margin: 17px 0 0 0;
+		transition: all 0.3s linear;
+	}
+	.nav{
+		width: 100%;
+	}
+	.hamburger-menu{
+		margin: 0 9px 0 0;
+	}
+	.contacts{
+		width: 238px;
+		margin: 0;
+		transition: all 0.3s linear;
+	}
+	.phone{
+		font-size: 15px;
+		padding: 17px 0 0 0;
+	}
+	.time-delivery__time{
+		font-size: 10px;
+		line-height: 17px;
+	}
+	.time-delivery__delivery{
+		font-size: 10px;
+		line-height: 12px;
+	}	
+	.order-log{			
+		width: 237px;
+		justify-content: space-between;
+	}
+	.order{
+		width: 160px;
+		&__cart-img{
+			width: 15px;
+			height: 15px;
+			margin-top: 3px;
+		}
+	}
+	.quantity{
+		width: 21px;
+		height: 17px;
+		&__text{
+			font-size: 12px;
+			padding: 0 0 1px 3px;
+		}
+	}
+
+	.shop-data{
+		&__item{
+			font-size: 10px;
+		}
+		&__text{
+			margin-top: 1px;
+		}
+		&__size{
+			font-size: 13px;
+			margin: -1px 2px 0 0;
+		}
+		&__dist{
+			font-size: 10px;
+			margin: 1px 6px 0 2px;
+		}
+	}
+	.log{
+		width: 62px;
+		&__user{
+			width: 16px;
+			height: 14px;
+		}
+		&__text{
+			font-size: 13px;
+		}
+	}
+	header{
+		height: 163px;
+		transition: all 0.3s linear;	
+	}	
+	.logo{
+		&__img{
+			width: 179px;
+			height: 23px;
+			transition: all 0.3s linear;
+		}
+		&__text{
+			font-size: 12.5px;
+			line-height: 15px;
+			padding: 0;
+			transition: all 0.3s linear;
+		}
+	}
+	.main-menu__item,
+	.main-menu__tit{
+		font-size: 12.5px;
+		transition: all 0.3s linear;
+	}
+	.main-menu{
+		height: 46px;
+		transition: all 0.3s linear;
+		&__tit{
+			padding: 0 9px 0 0;	
+		}
+		&__style-item2{
+			margin: 0 0 0 2.8%;
+		}
+		&__style-item3{
+			margin: 0 0 0 4%;
+		}
+		&__style-item4{
+			margin: 0 0 0 3.9%;
+		}
+		&__style-item5{
+			margin: 0 0 0 4.5%;
+		}
+		&__style-item6{
+			margin: 0 0 0 4.2%;
+		}
+	}
+	.hamburger-menu{
+		width: 14px;
+		height: 11px;
+		margin: 2px 11px 0 0;
+		transition: all 0.3s linear;
+	}
+	.menu-block{
+		&__circle{
+			margin-left: -2px;
+			margin-right: 10.5px;		
+		}
+	}
+	.drop-menu{
+		&__wrap{
+			padding: 9px 0 0 0;
+			top: 45px;
+			left: 18px;
+		}
+		&__item{
+			.fa-chevron-right{
+				transform: scale(1);
+				margin: 0 -1px 0 0;
+			}
+		}
+	}
+	.sub-menu{
+		&__wrap{
+			top: 106px;
+			right: -246px;
+		}
+		&__title{
+			margin-left: 15px;
+			font-size: 14.8px;
+		}
+	}
+}
+
+@media screen and (max-width: 1252px) {
+	.form-search{
+		width: 320px;
+		transition: all 0.3s linear;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.form-search{
+		width: 221px;
+		height: 31px;
+		margin-left: 36px;
+	}
+	.form-search__input{
+		font-size: 10px;
+		padding: 1px 5px 0 12px;
+	}
+	.form-search__img{
+		width: 13px;
+		height: 13px;
+	}
+	.form-search__button{
+		padding: 6px 0 0 0;
+	}
+	.slider{
+		&__item{
+			height: 165px;
+			transition: all 0.3s linear;
+		}
+		&__block{
+			width: 255px;
+			height: 65px;
+			padding: 10px 0 10px 15px;
+			transition: all 0.3s linear;
+			p{
+				font-size: 23px;		
+				line-height: 24.12px;
+				transition: all 0.3s linear;
+			}
+		}
+	}
+	.owl-dots{
+		display: none;
+	}
+	.owl-prev, 
+	.owl-next{
+		width: 21px;
+		height: 65px;
+		transition: all 0.3s linear;
+		.fa-chevron-left{
+			transform: scale(0.7);
+			margin: 0 7px 0 3px;
+		}
+		.fa-chevron-right{
+			transform: scale(0.7);
+			margin: 0 0 0 4px;
+		}
+	}
+	
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 992px){
+
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	.slider{
+		padding: 0;
+	}
+	.stripped-down-menu{
+		display: flex;
+	}
+	.home-img{
+		margin-left: 5%;
+	}
+	.search-lupa-img{
+		margin-left: 11.7%;
+	}
+	.cart-img{
+		margin-left: 12%;
+	}
+	.user2-img{
+		margin-left: 11%;
+	}
+	.call-img{
+		margin-left: 10.4%;
+	}
+	.wrapper__stripped-down-menu-style{
+		width: 100%;
+	}
+	.contacts,
+	.form-search,
+	.second-line{
+		display:none;
+	}
+	header{
+		height: 74px;
+	}
+	.first-line{
+		padding: 12px 0 0 8px;
+	}
+	.logo{
+		margin: 0;
+		&__img{
+			width: 192px;
+			height: 23px;
+		}
+		&__text{
+			font-size: 12.8px;
+			line-height: 16px;
+			padding: 2px 0 0 0;
+		}
+	}	
+}
+
+@media screen and (max-width: 488px) {
+	.slider{
+		padding: 0;
+		&__item{
+			height: 124px;
+			background-image: url(../img/bg_image_2.png);
+		}
+		&__block{
+			margin-left: 28px;	
+			margin-top: 3px;
+			width: 189px;
+			height: 43px;
+			padding: 10px 0 10px 6px;
+			p{
+				font-size: 16.4px;
+				line-height: 17.78px;
+			}	
+		}
+	}
+	.owl-prev, 
+	.owl-next{
+		width: 20px;
+		height: 28px;
+		.fa-chevron-right{
+			transform: scale(0.5);
+			margin: 0 0 0 4px;
+		}
+		.fa-chevron-left{
+			transform: scale(0.5);
+			margin: 0 4px 0 0;
+		}
+	}
+}

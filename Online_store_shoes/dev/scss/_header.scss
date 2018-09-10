@@ -1,0 +1,153 @@
+/*styles for Header*/
+
+.header{
+	width: 100%;
+	margin: 0 auto;
+	background-color: #242424;
+	padding: 0 10px;
+}
+.header-wrap{
+	margin: 0 auto;
+	width: 940px;
+	height: 45px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all .3s linear;
+}
+.logo{
+	padding: 10px 0;
+	font-family: "ST Heiti SC";
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: -0.65px;
+	a{
+		text-decoration: none;
+		color: #57c5a0;
+	}
+}
+.logo-search-wrap{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all .3s linear;
+	&:before{
+		content: '';
+		width: 2px;
+		height: 45px;
+		box-shadow: 1px 0 0 rgba(255, 255, 255, 0.35), inset 1px 0 0 rgba(255, 255, 255, 0.35);
+	}
+}
+.form-search{
+	height: 42px;
+	display: flex;
+	padding: 0 10px 0 12px;
+	width: 168px;		
+}
+.login{
+	color: #7e7e7e;
+	font-family: 'Aller';
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 43px;
+	width: 140px;
+	text-align: center;
+	cursor: pointer;
+	transition: all .3s linear;
+	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.35), inset 1px 0 0 rgba(255, 255, 255, 0.35);
+	&:hover{
+		color: #57c5a0;	
+	}
+}
+.search-btn{
+	background-color: #242424;
+	border: none;
+	outline: none;
+	.fa-search{
+		color: #7e7e7e;
+		cursor: pointer;
+		&:hover{
+			color: #57c5a0;
+			transition: all .3s linear;
+		}
+	}
+}
+.input-search{
+	background-color: #242424;
+	border: none;
+	color: #b1aeae;
+	font-family: "Myriad Pro";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+	letter-spacing: 1.2px;
+	outline: 0;
+	width: 120px;
+	transition: all .3s linear;
+
+}
+.search-result{
+	position: absolute;
+	top: 44px;
+	left: 0;
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+	visibility: hidden;
+	background-color: #4c4c4c;
+	display: flex;
+	flex-direction: column;
+	transition: width 0.7s ease, height 0.7s ease, visibility 0.7s ease, opacity 0.3s ease;
+	z-index:0;
+	&__item{
+		color: #aaaaaa;
+		font-family: "Myriad Pro";
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 18px;
+		text-transform: uppercase;
+		letter-spacing: 1.2px;
+		padding: 8px 0 10px 23px;
+	}
+	.search-result__item:first-child{
+		border-bottom: 1px solid #666464;
+	}
+}
+.sr-show{
+	width: 171px;
+	height: 76px;
+	visibility: visible;
+	opacity: 1;
+	z-index: 2;
+	transition: width 0.7s ease, height 0.7s ease, visibility 0.1s ease, opacity 0.5s ease 0.3s;
+}
+
+@media (max-width: 970px){
+	.header-wrap{
+		width: 720px;
+	}	
+	.logo-search-wrap{
+		&:before{
+			box-shadow: none;
+		}
+	}
+	input[type="search"]::placeholder{
+		color: transparent;
+	}
+
+}
+@media (max-width: 768px){
+	.header-wrap{
+		width: 100%;
+		
+	}	
+	.header{
+		padding: 0;
+	}
+	.form-search{
+		display: none;
+	}
+}

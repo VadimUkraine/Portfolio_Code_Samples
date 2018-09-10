@@ -1,0 +1,282 @@
+/*@media only screen and (max-width: 1140px) {
+	body {
+		width: 100%;
+	}
+}*/
+
+
+/*style for Stay In Touch*/
+
+@media (max-width: 1140px) {
+	#stay_intouch{
+		width: 100%;
+	}
+	.stay_intouch_head{
+		width: 100%;
+	}
+	.stay_intouch_info{
+		width: 100%;
+	}
+}
+@media (max-width:1030px){
+	.stay_intouch_info{
+		flex-direction: column;
+		align-items: center;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+	    bottom: 0;
+	}	
+	.contact_info{	
+		width: 75%;
+		margin-top: 4%;
+	}
+	.contact_form{
+		width: 75%;
+	}
+	.contact_form_date{		
+		width: 100%;
+		flex-direction: column;
+	}
+	.input_style{
+		margin: 0 0 3% 0;
+	}	
+	.stay_intouch_head{
+		padding: 5% 0 5% 21%;
+	}	
+	.form_button{
+		max-width: 54%;
+	}
+}
+
+
+/*style for Features*/
+
+@media (max-width: 1140px) {
+	#features{
+		width: 100%;
+	}
+}
+@media (max-width: 1030px) {
+	.features_gallery{
+		flex-direction: column;
+		align-items: center;
+	}
+	.features_wrapper{
+		padding: 5% 1%;
+	}
+	.features_wrapper h1{
+		margin-left: 21%;			
+	}
+	.features_gallery_block{
+		width: 58%;
+	}
+	.features_gallery_block h3{
+		padding: 3% 0;
+	}
+}
+
+
+/*style for What We Do*/
+
+@media (max-width: 1140px) {
+	#doing{
+		width: 100%;
+	}
+}
+@media (max-width: 1030px) {
+	.doing_gallery_block{
+		width: 44%;
+	}
+	.doing_gallery_block h3{
+		margin: 10% 0;
+	}
+}
+@media (max-width: 740px) {
+	.doing_gallery{
+		flex-direction: column;
+	    align-items: center;
+	    flex-wrap: nowrap;
+	}
+	.doing_gallery_block{
+		width: 58%;
+	}
+	#doing{
+		padding: 5% 1%;
+	}
+	.modest_head3{
+		margin-left: 21%;
+	}
+}
+
+
+/*style for Lovely Work*/
+
+@media (max-width: 1140px) {
+	#lovely_work{
+		width: 100%;
+	}
+}
+@media (max-width: 1030px) {
+	.lovely_work_block{
+		width: 45%;
+	}
+}
+@media (max-width: 740px) {
+	.lovely_work_wrapper{
+		padding: 5% 1%;
+	}
+	.lovely_work_gallery{
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: nowrap;		
+	}
+	.lovely_work_block{
+		width: 58%;
+	}
+	.lovely_work_head2{
+		margin-left: 21%;
+	}
+}
+
+
+/*style for Meet The Team*/
+
+@media (max-width: 1140px) {
+	#team{
+		width: 100%;
+	}
+}
+@media (max-width: 1030px) {
+	.team_gallery_block{
+		width: 45%;
+	}
+	.team_gallery_links{
+		padding: 0 30%;
+	}
+}
+@media (max-width: 740px) {
+	#team{
+		padding: 5% 1%;
+	}
+	#team h1{
+		margin-left: 21%;
+	}
+	.team_gallery{
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: nowrap;		
+	}	
+	.team_gallery_block{
+		width: 58%;
+	}	
+}
+
+
+/*style for We Are Modest*/
+
+@media (max-width: 1140px) {
+	#modest{
+		width: 100%;
+	}
+}
+@media (max-width: 1030px) {
+	#modest{
+		padding: 5% 1%;
+	}
+	.modest_content{
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: center;
+	}
+	.calendar{
+		width: 65%;
+	}
+	.modest_content_text{
+		width: 65%;
+		margin-right: 0;
+	}
+	.modest_head2{
+		margin-left:18%;
+	}	
+}
+@media (max-width: 570px) {
+	.calendar_text >p:first-child{
+		font-size:0.72rem;
+	}
+}
+@media (max-width: 520px) {
+	.modest_links img{
+		width: 18%;
+	}
+}
+
+
+
+/*style for slider*/
+
+@media (max-width: 1030px) {
+	#slader {
+    	margin-top: 5%;
+	}	
+}
+
+
+/*style for header*/
+
+@media (max-width: 1140px) {
+	header{
+		width: 100%;
+	}
+}
+@media (max-width: 1030px) {
+	.header_wrapper{
+		position: absolute;
+		width: 100%;
+	}
+	#menu-icon{
+		display: inline-block;
+	}
+	nav ul, nav:active ul{
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background-color: #1d2126;
+		right: 0;
+		top: 55px;
+		width: 35%;
+	}
+	/*nav:hover ul{
+		display: block;
+		padding: 5px;
+	}*/
+	nav li{
+		text-align: center;
+		width: 100%;
+		padding: 15px 0;
+		margin: 0;
+		cursor: pointer;
+	}
+}
+
+/*style for Footer*/
+
+@media (max-width: 1140px) {
+	footer{
+		width: 100%;
+	}
+}
+@media (max-width: 960px) {
+	#footer_wrapper {
+		flex-direction: column;
+		align-items: center;
+		padding: 3% 1%;
+	}
+	.footer_links{
+		margin-top: 3%;
+		width: 45%;
+	}
+	#footer_wrapper p{
+		width: 72%;
+		text-align: center;
+	}	
+}

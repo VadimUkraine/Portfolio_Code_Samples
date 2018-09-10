@@ -1,0 +1,92 @@
+/*styles for PopUp Registration*/
+
+.registration{
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.9);
+	position: fixed;
+	top: 0;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	right: -100%;
+	transition: right 0.5s;
+
+}
+.reg-form-wrap{
+	width: 300px;
+	padding: 7px 5px 10px 5px;
+	background: url(/images/slider-bg.png);
+}
+.reg-form-caption{
+	display: flex;
+	justify-content: space-between;
+	padding: 6px 7px;
+	align-items: center;
+	background-color:#2F4F4F;
+	color: #ffffff;
+}
+.reg-form__text{
+	font-family: 'Aller';
+	font-size: 1rem;
+	font-weight: 300;
+}
+.reg-form-close-wrap{
+	border: 1px solid #666464;
+	padding: 3px 5px;
+	cursor: pointer;
+	&:hover .fa-times{		
+		transition: all .2s linear;
+		color: #57c5a0;
+	}
+	&:hover {
+		border: 1px solid #ffffff;
+		transition: all .2s linear;
+	}	
+	
+}
+.reg-form{
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	padding: 0 10px;
+}
+.reg-form__input{
+	margin: 4px 0;
+	height: 30px;
+	padding: 0 5px;
+	outline: 0;
+	font-family: 'Aller';
+	font-size: 1rem;
+	font-weight: 300;
+	&:invalid{
+		box-shadow: inset 0 0 13px rgba(228, 106, 106, 0.75);
+		border: 1px solid #ff8383;
+		background-color: #ffffff;
+	}
+}
+.reg-form-confirm__input{
+	color: #ffffff;
+	background-color: #778899;
+	outline: 0;
+	border: none;
+	cursor: pointer;
+	font-family: 'Aller';
+	font-size: 1rem;
+	font-weight: 300;
+	width: 120px;
+	text-align: center;
+	&:hover {
+		transition: all .2s linear;
+		color: #57c5a0;
+	}
+}
+.confirm-wrap{
+	display: flex;
+	justify-content: space-between;
+	height: 30px;
+	margin-top: 15px;
+}

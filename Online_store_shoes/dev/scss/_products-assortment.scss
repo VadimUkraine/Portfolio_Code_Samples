@@ -1,0 +1,206 @@
+/*styles for Products Assortment*/
+
+.assortment{
+	width: 100%;
+	background-color: #2e2e2e;
+	padding: 15px 0;
+}
+.selection-wrap{
+	width: 940px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	align-items: center;
+	height: 100%;
+	padding: 0 0 0 72px;
+	transition: all .3s linear;
+}
+.selection__caption{
+	color: #ffffff;
+	font-family: 'Aller';
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 25px;
+	letter-spacing: 0.55px;
+}
+.brans-wrap{
+	width: 220px;
+	height: 60px;
+	background-color: #242424;
+	position: relative;
+}
+.brands-menu{	
+	position: absolute;
+	width: 100%;
+	height: 0px;
+	background-color: #242424;
+	z-index: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: height 0.7s ease 0.5s, visibility 0.1s ease 1s, opacity .1s ease 1s, z-index .1s ease 1s; 
+	&__item{		
+		color: #ffffff;
+		font-family: 'Aller';
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 25px;
+		letter-spacing: 0.45px;
+		padding: 10px 0 10px 15px;
+		cursor: pointer;
+		border: 2px solid transparent;
+		opacity: 0;
+		transition: opacity 0.5s ease;
+		&:hover{
+			padding: 10px 0 10px 55px;
+			border: 2px solid #57c5a0;
+		}
+	}
+}
+.menu-show__brands{
+	height: 147px;
+	visibility: visible;
+	opacity: 1;
+	z-index: 3;
+	transition: visibility 0.1s ease, height 0.5s ease;
+	.brands-menu__item{
+		opacity: 1;
+		transition: opacity 0.5s ease .5s;
+	}
+}
+
+.brands-name-wrap{
+	display: flex;
+	align-items: center;
+	height: 100%;
+	justify-content: space-between;
+	padding: 0 22px 0 50px;
+	cursor: pointer;
+}
+.brands-name__caption{
+	color: #ffffff;
+	font-family: 'Aller';
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 25px;
+	letter-spacing: 0.45px;
+}
+
+.rotate{
+	transform: rotate(180deg);
+}
+.categories-wrap{
+	@extend .brans-wrap;
+}
+.categories-menu{
+	position: absolute;
+	width: 100%;
+	height: 0px;
+	background-color: #242424;
+	z-index: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: height 0.7s ease 0.5s, visibility 0.1s ease 1s, opacity .1s ease 1s, z-index .1s ease 1s; 
+	&__item{		
+		color: #ffffff;
+		font-family: 'Aller';
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 25px;
+		letter-spacing: 0.45px;
+		padding: 10px 0 10px 15px;
+		cursor: pointer;
+		border: 2px solid transparent;
+		opacity: 0;
+		transition: opacity 0.5s ease;
+		&:hover{
+			padding: 10px 0 10px 55px;
+			border: 2px solid #57c5a0;
+		}
+	}
+}
+.menu-show__category{
+	height: 147px;
+	visibility: visible;
+	opacity: 1;
+	z-index: 3;
+	transition: visibility 0.1s ease, height 0.5s ease;
+	.categories-menu__item{
+		opacity: 1;
+		transition: opacity 0.5s ease .5s;
+	}
+}
+.categories-name-wrap{
+	@extend .brands-name-wrap;
+	padding: 0 22px 0 50px;
+}
+.categories-name__caption{
+	@extend .brands-name__caption;
+}
+
+.price-wrap{
+	@extend .brans-wrap;
+}
+.price-menu{
+	position: absolute;
+	width: 100%;
+	height: 0px;
+	background-color: #242424;
+	z-index: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: height 0.7s ease 0.5s, visibility 0.1s ease 1s, opacity .1s ease 1s, z-index .1s ease 1s; 
+	&__item{		
+		color: #ffffff;
+		font-family: 'Aller';
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 25px;
+		letter-spacing: 0.45px;
+		padding: 10px 0 10px 15px;
+		cursor: pointer;
+		border: 2px solid transparent;
+		opacity: 0;
+		transition: opacity 0.5s ease;
+		&:hover{
+			padding: 10px 0 10px 55px;
+			border: 2px solid #57c5a0;
+		}
+	}
+}
+.menu-show__price{
+	height: 147px;
+	visibility: visible;
+	opacity: 1;
+	z-index: 3;
+	transition: visibility 0.1s ease, height 0.5s ease;
+	.price-menu__item{
+		opacity: 1;
+		transition: opacity 0.5s ease .5s;
+	}
+}
+.price-name-wrap{
+	@extend .brands-name-wrap;
+	padding: 0 22px 0 50px;
+}
+.price-name__caption{
+	@extend .brands-name__caption;
+}
+
+@media (max-width: 970px){
+	.selection-wrap{
+		width: 100%;
+		padding: 0 10px;
+		transition: all .3s linear;
+	}	
+}
+@media (max-width: 768px){
+	.selection-wrap{
+		flex-direction: column;
+	}	
+	.selection__caption{
+		margin-bottom: 15px;
+	}
+	.brans-wrap{
+		margin-bottom: 15px;
+	}
+}

@@ -1,0 +1,12 @@
+section.registration
+	.reg-form-wrap
+		.reg-form-caption
+			.reg-form__text Login or Register
+			.reg-form-close-wrap
+				i.fa.fa-times(aria-hidden='true')
+		form(action="URL").reg-form
+			input(type='text', name="Username", placeholder='Username', pattern="[A-Za-zА-Яа-яЁё]{2,}", title="Only letters, no less 2 signs", required).reg-form__input
+			input(type='password', name="Password", placeholder='Password', pattern="^[a-z0-9_-]{8,18}$" title="No less than 8 signs", required).reg-form__input
+			.confirm-wrap
+				input(name='Login', value='Login').reg-form-confirm__input
+				input(name='Register', value='Register').reg-form-confirm__input

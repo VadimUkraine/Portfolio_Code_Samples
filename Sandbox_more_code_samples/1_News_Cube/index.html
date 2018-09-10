@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HomeTask11</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        #wrapper{
+            margin-top: 50px;
+            margin-left: 400px;
+            perspective: 2000px;
+            position: absolute;
+            text-align: center;
+            color: red;
+        }
+        @keyframes changeside{
+            0%{transform: translateZ(-300px) rotateY(0deg);}
+            15%{transform: translateZ(-300px) rotateY(90deg);}
+            25%{transform: translateZ(-300px) rotateY(90deg);}
+            40%{transform: translateZ(-300px) rotateY(180deg);}
+            50%{transform: translateZ(-300px) rotateY(180deg);}
+            65%{transform: translateZ(-300px) rotateY(270deg);}
+            75%{transform: translateZ(-300px) rotateY(270deg);}
+            90%{transform: translateZ(-300px) rotateY(360deg);}
+            100%{transform: translateZ(-300px) rotateY(360deg);}
+        }
+        .cube{
+            position: relative;
+            width: 600px;
+            height: 600px;
+            animation: changeside 40s linear infinite;
+            transform-style: preserve-3d;
+            margin-top: 40px;
+            color: black;
+        }
+        .position {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            border: 2px solid black;
+        }
+        div:hover{
+            animation-play-state: paused;
+        }
+        .front{
+            transform: translateZ(-300px) rotateY(180deg);
+            background-color: #f2f2f2;
+        }
+        .back{
+            transform: translateZ(300px);
+            background-color: #f2f2f2;
+        }
+        .right{
+            transform: translateX(300px) rotateY(90deg);
+            background-color: #f2f2f2;
+        }
+        .left{
+            transform: translateX(-300px) rotateY(-90deg);
+            background-color: #f2f2f2;
+        }
+        .textCube{
+            position: relative;
+            text-align: center;
+            font-size: 1.2rem;
+            color: black;
+            opacity: 0.7;
+            padding-top: 20px;
+        }
+        .respond{
+            color: black;
+            padding-top: 10px;
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper"> News CUBE
+        <div class="cube">
+            <div class="front position">
+                <div class="textCube">Кравчук развенчал любимый миф России о Крыме</div>
+                <div class="respond">For more news - <a href="https://www.facenews.ua/news/2017/353580/" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+                <div class="textCube">США предоставили Украине круглую сумму технической помощи</div>
+                <div class="respond">For more news - <a href="https://www.obozrevatel.com/finance/business-and-finance/64780-ssha-predostavili-ukraine-krugluyu-summu-finansovoj-pomoschi.htm" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+                <div class="textCube">Україна експортувала рекордний обсяг соняшникової олії</div>
+                <div class="respond">For more news - <a href="http://agravery.com/uk/posts/show/ukraina-eksportuvala-rekordnij-obsag-sonasnikovoi-olii" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+                <div class="textCube">Продукция из украинских фруктов - стабильно популярна в ЕС, США и Канаде</div>
+                <div class="respond">For more news - <a href="http://www.ukragroconsult.com/news/produkciya-iz-ukrainskih-fruktov-stabilno-populyarna-v-es-ssha-i-kanade" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+                <div class="textCube">Знайшли чим замінити Wi-Fi-вишки</div>
+                <div class="respond">For more news - <a href="https://gazeta.ua/articles/science/_znajshli-chim-zaminiti-wifivishki/759304" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+        </div>
+            <div class="back position">
+                <div class="textCube">Трамп прокомментировал блокировку своего указа о миграции</div>
+                <div class="respond">For more news - <a href="http://telegraf.com.ua/mir/usa/3214694-tramp-prokommentiroval-blokirovku-svoego-ukaza-o-migratsii.html" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+                <div class="textCube">Apple представит новый 9,7-дюймовый iPad Pro2</div>
+                <div class="respond">For more news - <a href="http://portaltele.com.ua/news/companies/apple-predstavit-9-7-dyujmovyj-ipad-pro-2.html" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+                <div class="textCube">В GTA Online добавили 20 особых гонок и новый автомобиль</div>
+                <div class="respond">For more news - <a href="http://internetua.com/v-GTA-Online-dobavili-20-osobih-gonok-i-novii-avtomobil" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+                <div class="textCube">Мощная видеокарта ZOTAC GeForce GTX 1080 Ti</div>
+                <div class="respond">For more news - <a href="http://expert.com.ua/107890-moshhnaya-videokarta-zotac-geforce-gtx-1080-ti.html" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+                <div class="textCube">Астрономы обнаружили в космосе загадочный блуждающий объект</div>
+                <div class="respond">For more news - <a href="http://glavnoe.ua/news/n301932" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+            </div>
+            <div class="left position">
+                <div class="textCube">Google и Levi's осенью выпустят "умную" куртку для велосипедистов</div>
+                <div class="respond">For more news - <a href="http://telegraf.com.ua/tehnologii/3214486-google-i-levi-s-osenyu-vyipustyat-umnuyu-kurtku-dlya-velosipedistov.html" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+                <div class="textCube">Компания Gresso разработала чехол, защищающий iPhone от ЦРУ</div>
+                <div class="respond">For more news - <a href="http://grifonsoft.ru/news/137453-kompaniia-gresso-razrabotala-chehol-zashishaushii-iphone-ot-cry.html">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+                <div class="textCube">Что купить для Samsung Galaxy Note 2</div>
+                <div class="respond">For more news - <a href="http://grifonsoft.ru/news/137425-chto-kupit-dlya-samsung-galaxy-note-2.html" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+                <div class="textCube">Американский боевой истребитель F-15 переродился в новом качестве</div>
+                <div class="respond">For more news - <a href="http://www.segodnya.ua/world/amerikanskiy-boevoy-istrebitel-f-15-pererodilsya-v-novom-kachestve-977817.html" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+                <div class="textCube">На які характеристики слід звернути увагу при покупці смартфона</div>
+                <div class="respond">For more news - <a href="http://invaders.com.ua/tech/5381" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+            </div>
+            <div class="right position">
+                <div class="textCube">Доведено неможливість появи Меркурія в Сонячній системі</div>
+                <div class="respond">For more news - <a href="http://www.topnews.in.ua/component/content/article/27-interestingness/6080-dovedeno-nemozhlyvist-poyavy-merkuriya-v-sonyachniy-systemi.html" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+                <div class="textCube">Невідомі науці морські істоти потрапили в об'єктив камери</div>
+                <div class="respond">For more news - <a href="http://znaj.ua/news/interesting/100276/nevidomi-nauci-morski-istoti-potrapili-v-obyektiv-kameri.html" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+                <div class="textCube">Смартфоны Xiaomi захватили рейтинг самых популярных Android-устройств от AnTuTu</div>
+                <div class="respond">For more news - <a href="http://grifonsoft.ru/news/137458-smartfony-xiaomi-zaxvatili-rejting-samyx-populyarnyx-android-ustrojstv-ot-antutu.html" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+                <div class="textCube">10 корисних порад для смартфона, які повинен знати кожен</div>
+                <div class="respond">For more news - <a href="http://navkolonas.com/archives/26559" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+                <div class="textCube">Opera Reborn получает поддержку Telegram</div>
+                <div class="respond">For more news - <a href="http://internetua.com/Opera-Reborn-polucsaet-podderjku-Telegram" target="_self">visit out site</a></div>
+                <div>-----------------------------------------------------------</div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript"></script>
+</body>
+</html>
+

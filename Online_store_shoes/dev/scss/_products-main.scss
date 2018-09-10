@@ -1,0 +1,354 @@
+/*additional styles for Main block of Products Page*/
+
+.products-main-content{
+	width: 100%;
+	background: url(/images/main-bg.png);
+	
+}
+.products-content-wrap{
+	width: 940px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	padding: 0 0 20px 0;
+	
+}
+.sorting{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 0 5px 0;
+}
+.sorting-left-content{
+	width: 260px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.sorting-left__caption{
+	color: #242424;
+	font-family: 'Aller';
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 60px;
+}
+.sorting-left__route{
+	color: #bcb5a7;
+	font-family: 'Aller';
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: 0.3px;
+	margin-top: 9px;
+}
+.sorting-right-content{
+	display: flex;
+	align-items: center;
+	width: 354px;
+	justify-content: space-between;
+}
+.sorting-right__caption{
+	color: #bcb5a7;
+	font-family: 'Aller';
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: 0.35px;
+}
+.grid-wrap{
+	width: 30px;
+	height: 30px;
+	border: 1px solid #bcb5a7;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+	cursor: pointer;
+	transition: all .3s linear;
+	&:hover .grid-item{
+		background-color: #898170;
+	}
+}
+.grid-item{
+	width: 7px;
+	height: 7px;
+	background-color: #bcb5a7;
+	margin: 1px;
+}
+.grid-show-select{
+	border: 1px solid #898170;
+}
+.line-wrap{
+	width: 30px;
+	height: 30px;
+	border: 1px solid #bcb5a7;
+	padding: 8px 6px;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	transition: all .3s linear;
+	&:hover .line__point{
+		background-color: #898170;
+	}
+	&:hover .line__route{
+		background-color: #898170;
+	}
+
+}
+.line{
+	display: flex;
+	width: 16px;
+	justify-content: space-between;
+	margin: 1px 0;
+
+}
+.line__point{
+	width: 3px;
+	height: 2px;
+	background-color: #bcb5a7;
+	margin-right: 2px;
+}
+.line__route{
+	width: 15px;
+	height: 2px;
+	background-color: #bcb5a7;
+}
+.line-show-select{
+	border: 1px solid #898170;
+}
+.sort-wrap{
+	width: 200px;
+	height: 30px;
+	border: 1px solid #bcb5a7;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 13px 0 36px;
+}
+.sort__caption{
+	color: #bcb5a7;
+	font-family: 'Aller';
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: 0.35px;
+}
+.sort__arrow{
+	cursor: pointer;
+}
+.products-content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.products-content-show{
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: center;
+}
+.product-separator{
+	background-color: #bcb5a7;
+	width: 940px;
+	height: 1px;
+	margin: 10px auto 0 auto;
+}
+
+.pdt-shoes-block{
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	height: 270px;
+	position: relative;
+	overflow: hidden;	
+	margin-bottom: 15px;
+	transition: all 0.3s linear;
+	&__img{
+	width: 100%;
+	height: 220px;
+	background: url(/images/item-1.png) center center no-repeat #fff;
+	}
+	&__text{
+		height: 49px;
+		color: #242424;
+		font-family: 'Aller';
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 49px;
+		letter-spacing: 0.45px;
+		padding-left: 93px;
+		background-color: #ffffff;
+		margin-top: 2px;		
+	}
+	&__icons{
+		background-color: #ffffff;
+		padding:0 40px 0 93px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 2px;
+		height: 49px;
+		position: absolute;
+		bottom: -49px;
+		width: 100%;
+		.fa-star-o{
+			&:hover{
+			cursor: pointer;
+			color: #57c5a0;
+			transition: all .3s linear;
+			}
+		}
+	}	
+}
+
+.pdt-shoes-text-icons-wrap{
+	position: relative;
+	&:hover .pdt-shoes-block__icons{
+		bottom:0;
+	}
+}
+.pdt-shoes-price{
+	width: 68px;
+	height: 67px;
+	background-color: #57c5a0;
+	position: absolute;
+	bottom: 0;
+	left: 12px;
+	color: #ffffff;
+	font-family: 'Aller';
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pdt-view-icon{
+	cursor: pointer;
+	&:hover .pdt-shoes-icons{
+		fill: #57c5a0;
+		transition: all .3s linear;
+	}
+}
+.pdt-share-icon,
+.pdt-buy-icon{
+	@extend .pdt-view-icon;
+}
+.pdt-sale-badge{
+	width: 68px;
+	height: 67px;
+	background-color: #242424;
+	position: absolute;
+	top: 0;
+	right: 13px;
+	color: #ffffff;
+	font-family: 'Aller';
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 25px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pdt-outofstock-badge{
+	@extend .sale-badge;
+	background-color: #f27e4b;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 15px;
+}
+
+.pdt-shoes-block2{
+	@extend .pdt-shoes-block;
+	&__img{
+		width: 100%;
+		height: 220px;
+		background: url(/images/item-2.png) 50% 1% no-repeat #fff;
+	}
+}
+.pdt-shoes-block3{
+	@extend .pdt-shoes-block;
+	&__img{
+		width: 100%;
+		height: 220px;
+		background: url(/images/item-3.png) 50% 1% no-repeat #fff;
+	}
+}
+
+.pdt-shoes-block4{
+	@extend .pdt-shoes-block;
+	&__img{
+		width: 100%;
+		height: 220px;
+		background: url(/images/item-4.png) 50% 1% no-repeat #fff;
+	}
+}
+
+.pdt-shoes-block5{
+	@extend .pdt-shoes-block;
+	&__img{
+		width: 100%;
+		height: 220px;
+		background: url(/images/item-5.png) 50% 1% no-repeat #fff;
+	}
+}
+.pdt-shoes-block6{
+	@extend .pdt-shoes-block;
+	&__img{
+		width: 100%;
+		height: 220px;
+		background: url(/images/item-6.png) 50% 1% no-repeat #fff;
+	}
+}
+
+@media (max-width: 970px){
+	.products-content-wrap{
+		width: 100%;
+		padding: 0 50px 20px 50px;
+	}
+	.product-separator{
+		width: 100%;
+	}	
+}
+
+@media (max-width: 768px){
+	.sorting{
+		flex-direction: column;
+		padding: 15px 0;
+	}
+	.sorting-left-content{
+		display: none;
+	}
+	.products-content-wrap{
+		width: 100%;
+		padding: 0 20px 20px 20px;
+	}
+}
+
+@media (max-width: 658px){
+	.products-content-wrap{
+		padding: 0 10px 20px 10px;
+	}
+	.products-content{
+		justify-content: center;
+	}
+	.pdt-shoes-block{
+		margin: 0 10px 15px 10px;
+	}
+}
+
+@media (max-width: 405px){
+	.sorting-right-content{
+		width: 300px;
+	}
+	.sorting-right__caption{
+		display: none;
+	}
+	.pdt-shoes-block{
+		margin: 0 0 15px 0;
+	}
+}

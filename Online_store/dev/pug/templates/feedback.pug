@@ -1,0 +1,14 @@
+section#feedback_form
+	.write_form
+		.close#close X
+		h2 Обратная связь
+		form(method="post").form_style
+			label.label_style Ваше имя *
+				input(type="text" name="username" required placeholder="Поле обязательно для заполнения" pattern="[A-Za-zА-Яа-яЁё]{2,20}" title="Только буквы и не более 20")
+			label.label_style Телефон *
+				input(type="tel" name="phone" required placeholder="Поле обязательно для заполнения" pattern="[0-9]{3,3}[\-][0-9]{3,3}[\-][0-9]{2,2}[\-][0-9]{2,2}" title="Формат должен быть вида ХХХ-ХХХ-ХХ-ХХ")
+			label.label_style Email *
+				input(type="text" name="email" required placeholder="Поле обязательно для заполнения")
+			label.label_style Сообщение
+				textarea(maxlength="340")
+			input(type="submit").send

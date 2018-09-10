@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pole Chudes</title>
+        <style>
+            body{
+                margin: 15px auto;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+
+            }
+            #word{
+                margin-top: 25px;
+            }
+            #select{
+                margin-top: 25px;
+            }
+            #checker{
+                margin-top: 25px;
+                margin-left: 20px;
+            }
+            #wrapper{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            #stop{
+                margin-left: 15px;
+            }
+            .direct{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .direct2{
+                display: flex;
+                flex-direction: column;
+                padding-left: 45px;
+            }
+            .help{
+                margin-top: 15px;
+            }
+        </style>
+    </head>
+    <body>
+    <div id="wrapper">
+        <div class="direct">
+            <div><button id="start">Сыграем?</button></div>
+            <div id="word"></div>
+            <div id="select">Предложите букву на Ваш выбор: <input type="text" id="letter" maxlength="1" size="1"></div>
+            <div id="checker">
+                <button id='check'>Проверить?</button>
+                <button id="stop">Надоело!</button>
+            </div>
+        </div>
+        <div class="direct2">
+            <div>Попыток: <span id="tries"></span></div>
+            <div class="help">Угадано букв: <span id="checks"></span></div>
+            <div class="help">Осталось угадать: <span id="left"></span></div>
+        </div>
+    </div>
+	<script>
+        var words = ['салют','феерверк','взрыв', 'хлопушка', 'фитиль', 'динамит', 'огонь'];
+        document.getElementById('letter').setAttribute('disabled', 'disabled');
+        document.getElementById('start').addEventListener('click', function() {
+            document.getElementById('word').textContent = holder.split('').join(' ');
+            document.getElementById('start').style.display = 'none';
+            document.getElementById('letter').removeAttribute('disabled');
+        });
+        Array.prototype.getElement = function () {
+            return this[Math.floor(Math.random() * this.length)];
+        }
+        String.prototype.replaceLetter=function(index, character) {
+            return this.substr(0, index) + character + this.substr(index+character.length);
+        }
+
+        var currentWord = words.getElement();
+        var holder = '_'.repeat(currentWord.length);
+        var input = function (letter) {
+            var counter = 0;
+            while(currentWord.indexOf(letter, counter) !== -1) {
+                var position = currentWord.indexOf(letter, counter);
+                holder = holder.replaceLetter(position, letter);
+                counter++;
+            }
+            return holder.split('').join(' ');
+        }
+
+        var counter = 0;
+        document.getElementById('check').addEventListener('click', function() {
+            if (document.getElementById('letter').value != '') {
+                counter ++;
+                var val = document.getElementById('letter').value;
+                document.getElementById('word').textContent = input(val);
+                document.getElementById('letter').value = '';
+                document.getElementById('tries').textContent = counter;
+                var leftLetter = holder.match(/_/gi) ? holder.match(/_/gi).length : 0 ;
+                if (leftLetter != 0) {
+                    document.getElementById('checks').textContent = holder.length - leftLetter;
+                    document.getElementById('left').textContent = leftLetter;
+                } else {
+                    document.querySelector('body').textContent = 'Кажись Вы отгадали слово "' +holder +'".';
+                }
+            }
+
+        });
+        document.getElementById('stop').addEventListener('click', function() {
+            document.querySelector('body').textContent = 'Надоело играть? Мы так старались для Вас.(((';
+        });
+
+
+
+	</script>
+
+	</body>
+</html>
